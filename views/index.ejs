@@ -18,14 +18,15 @@
       href="https://fonts.googleapis.com/css?family=Permanent+Marker"
       rel="stylesheet"
     />
-    <!-- CSS
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/skeleton.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/skeleton.css" />
 
     <!-- JS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -54,7 +55,9 @@
     <nav id="overlay-nav">
       <div id="nav-content">
         <ul>
-          <li><a href="#">Login</a></li>
+          <li>
+            <a href="#" class="modal-trigger" data-modal="Login">Login</a>
+          </li>
           <li><a href="#">Registration</a></li>
           <li><a href="#">Impressum</a></li>
           <li><a href="#">Kontakt</a></li>
@@ -76,7 +79,7 @@
             <form>
               <img src="styles/img/profile.png" width="150px" />
               <input type="text" name="Email" placeholder="E-Mail" />
-              <input type="text" name="Passwort" placeholder="Passwort" />
+              <input type="password" name="Passwort" placeholder="Passwort" />
               <button type="submit" class="button button-primary">Login</button>
             </form>
           </div>
@@ -95,8 +98,15 @@
               <img src="styles/img/profile.png" width="150px" />
               <input type="text" name="Name" placeholder="Name" />
               <input type="text" name="Email" placeholder="E-Mail" />
-              <input type="text" name="Passwort" placeholder="Passwort" />
-              <button type="submit" class="button button-primary">Login</button>
+              <input type="password" name="Passwort" placeholder="Passwort" />
+              <input
+                type="password"
+                name="Passwort"
+                placeholder="Passwort Wiederholen"
+              />
+              <button type="submit" class="button button-primary">
+                Registration
+              </button>
             </form>
           </div>
         </div>
@@ -213,6 +223,10 @@
       <h2 style="padding-top: 44vh; text-align: center;">
         Platz für mehr Kontent...
       </h2>
+    </div>
+
+    <div id="footer" class="row" style="background-color: white;">
+      <a href="/impressum">impressum</a>
     </div>
 
     <!-- JS
