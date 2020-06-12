@@ -391,7 +391,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33c3f0;
+  border: 1px solid #7affd1;
   outline: 0;
 }
 label,
@@ -414,7 +414,7 @@ label > .label-body {
   font-weight: normal;
 }
 input::placeholder {
-  color: black;
+  color: #585858;
   font-family: "open sans";
   font-weight: 100;
 }
@@ -711,6 +711,10 @@ a {
   z-index: 2;
 }
 
+.scroll:hover {
+  color: #585858;
+}
+
 /*  footer  */
 #footer a {
   display: block;
@@ -728,6 +732,7 @@ a {
   top: 40px;
   right: 45px;
   border-radius: 50%;
+  border: 3px solid white;
   z-index: 5;
   background: white;
   cursor: pointer;
@@ -735,12 +740,9 @@ a {
   transition: all 0.5s ease;
 }
 
-#menu-icon-shape:hover {
-  background: #7affd1;
-}
-
 #menu-icon-shape.active {
   background: transparent;
+  border: transparent;
 }
 
 #menu-icon-shape.active:hover {
