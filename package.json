@@ -25,12 +25,12 @@
     "lodash": "^4.17.15",
     "mongodb": "^2.2.31",
     "password-hash": "^1.2.2",
-    "socket.io": "^2.0.3",
+    "socket.io": "^2.4.0",
     "tingodb": "^0.5.1"
   },
   "devDependencies": {
     "express-session": "^1.15.6",
     "nodemon": "^1.12.1",
-    "socket.io": "^2.0.3"
+    "socket.io": "^2.4.0"
   }
 }
